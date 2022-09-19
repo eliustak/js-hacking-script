@@ -3,7 +3,7 @@
 #-3x-y+7z=-34
 #-8x+y-2z=-20
 
-import numpy as numpy
+import numpy as np
 
 A = np.array([[2, -6, -1], [-3, -1, 7], [-8, 1, -2]])
 B = np.array([-38, 34, 28])
@@ -21,7 +21,7 @@ A1[2,1] = A[2,1] - A[2,0]/A[0,0] * A[0,1]
 A1[2,2] = A[2,2] - A[2,0]/A[0,0] * A[0,2]
 print(A1)
 
-A2 = np.zeos(m,n)
+A2 = np.zeros(m,n)
 A2 = A1.copy()
 
 #Rumus = R3 - A[2,1]/A[1,1] * R2
